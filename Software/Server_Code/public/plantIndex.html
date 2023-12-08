@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script src='asyncReq.js'></script>
+    <script>
+        function getDataFromServer() {
+            var url = "./getValue";
+            var callback = function (data) {
+                console.log(data, typeof data);
+                var payloads = JSON.parse(data);
+
+                if (payloads.length === 0) {
+                    console.log("No data received");
+                    return;
+                }
+
+                var latestPayload = payloads[0];
+
+                var fluidTemperature = latestPayload.fluid_temperature;
+                var heaterStatus = latestPayload.heater_status ? "On" : "Off";
+                var pump1Status = latestPayload.pump1_status ? "On" : "Off";
+                var pump2Status = latestPayload.pump2_status ? "On" : "Off";
+                var levelTank1 = latestPayload.level_tank1;
+                var levelTank2 = latestPayload.level_tank2;
+                var timestamp = latestPayload.timestamp;
+
+                var output =
+                    "<h2> Fluid Temperature </h2> <p>" + fluidTemperature.toFixed(2) + " &deg; F</p>" +
+                    "<h2> Heater Status </h2> <p>" + heaterStatus + "</p>" +
+                    "<h2> Pump 1 Status </h2> <p>" + pump1Status + "</p>" +
+                    "<h2> Pump 2 Status </h2> <p>" + pump2Status + "</p>" +
+                    "<h2> Level Tank 1 </h2> <p>" + levelTank1.toFixed(2) + "</p>" +
+                    "<h2> Level Tank 2 </h2> <p>" + levelTank2.toFixed(2) + "</p>" +
+                    "<p> at " + new Date(timestamp) + "</p>";
+
+                document.getElementById("data").innerHTML = output;
+            };
+
+            loadFile(url, callback);
+        }
+    </script>
+</head>
+
+<body style='text-align:center; font-family:Helvetica' onload='setInterval("getDataFromServer()", 1000)'>
+    <h1> Plant Data </h1>
+    <div id='data'></div>
+</body>
+</html>
