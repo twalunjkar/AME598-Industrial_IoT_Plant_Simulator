@@ -15,10 +15,10 @@
 
 In industrial environments, the lack of real-time monitoring leads to inefficiencies and delays in addressing critical issues. This project introduces an IIoT-based system for proactive monitoring and control, enhancing operational efficiency.
 
-![setup](images/setup.jpg)
+![setup](Media/setup.jpg)
 - **Fig 1:** Plant setup
 ---
-![AWS_IoT_Core_System](images/AWS_IoT_Core_System.jpg)
+![AWS_IoT_Core_System](Media/AWS_IoT_Core_System.jpg)
 - **Fig 2:** AWS IoT Core System
 ---
 ## Key Features
@@ -44,16 +44,16 @@ A DIY approach was employed to develop a two-tank fluid system, involving the cr
 
 Successful implementation of algorithms and hardware configurations led to the active use of the demo kit.
 
-![MQTT_test](images/MQTT_test.jpg)
+![MQTT_test](Media/MQTT_test.jpg)
 - **Fig 3:** AWS IoT Core receiving real-time data
 ---
-![lambda_function](images/lambda_function.jpg)
+![lambda_function](Media/lambda_function.jpg)
 - **Fig 4:** AWS Lambda function receives and processes data for storage
 ---
-![SNS](images/SNS.jpg)
+![SNS](Media/SNS.jpg)
 - **Fig 5:** AWS Lambda function also sends mail alert notifications (SNS)
 ---
-![dashboard](images/dashboard.jpg)
+![dashboard](Media/dashboard.jpg)
 - **Fig 6:** Dashboard showing real-time data
 ---
 
