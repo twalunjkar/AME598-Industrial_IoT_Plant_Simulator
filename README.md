@@ -4,12 +4,11 @@
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
-  - [Simulation/Software](#simulationsoftware)
+  - [Simulation/Software](#Simulation/ Software)
   - [Hardware Plant Setup](#hardware-plant-setup)
 - [Results](#results)
-- [Conclusion](#conclusion)
 - [References](#references)
-- [Project Report](AME_598_Final_Project_Report_%20Tejaswini_Ashok_Walunjkar.pdf)
+- [Project Report](Report/AME_598_Final_Project_Report.pdf)
 
 ## Overview
 
