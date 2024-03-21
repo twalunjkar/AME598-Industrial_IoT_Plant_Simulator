@@ -4,7 +4,7 @@
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
-  - [Simulation/ Software](#Simulation/-Software)
+  - [Simulation Software](#Simulation-Software)
   - [Hardware Plant Setup](#hardware-plant-setup)
 - [Results](#results)
 - [References](#references)
@@ -31,7 +31,7 @@ In industrial environments, the lack of real-time monitoring leads to inefficien
 ---
 The proposed approach comprises installation of a strong industrial monitoring system that uses strategically placed sensors to collect real-time data in the industrial setting. These sensors function as data gathering nodes, securely transferring information to a centralized server suited for data management. To enable easy collation and retrieval, the server employs modern data handling techniques. Real-time data analysis is used to improve the systems’ capabilities by implementing complex algorithms aimed for anomaly identification and SNS for quick redressal in response to vital sensor data . Users can customize alert thresholds to tailor notifications based on specific characteristics, ensuring a prompt and targeted response to emergent situations. To give users a full insight, This proposed method includes developing of a demonstration kit, replicating a real-world industrial process plant, along with an IoT System pipeline and user-friendly dashboards. These dashboards will provide user friendly monitoring interfaces to analyze large data easily.
 
-### Simulation/ Software
+### Simulation Software
 
 In the development of an AWS IoT Core pipeline, a Python script was created to simulate sensor data, generating realistic information using libraries such as 'random'. The script establishes an MQTT connection to the AWS IoT Core endpoint, publishing simulated sensor data at regular intervals. AWS IoT policies and security credentials were configured to enable secure communication. Subsequently, an AWS IoT Rule was set up to trigger a Lambda function upon receiving the simulated data, allowing for further processing or integration with other AWS services. This comprehensive integration provides a foundation for scalable and real-time handling of sensor data within the AWS ecosystem.
 
