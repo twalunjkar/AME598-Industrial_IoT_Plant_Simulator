@@ -4,7 +4,7 @@
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Project Structure](#project-structure)
-  - [Simulation/Software](#Simulation\/Software)
+  - [Simulation/Software](#simulationsoftware)
   - [Hardware Plant Setup](#hardware-plant-setup)
 - [Results](#results)
 - [References](#references)
